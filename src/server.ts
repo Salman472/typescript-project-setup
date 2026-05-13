@@ -16,7 +16,7 @@ const bootstrap = async () => {
 
 (async () => {
   await bootstrap();
-  // await seedSuperAdmin()
+
 })();
 
 
