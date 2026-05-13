@@ -10,13 +10,17 @@ const bootstrap = async () => {
       console.log(`Server is running on port ${env.port}`);
     });
   } catch (err) {
-    console.log("Server running error");
+    console.log("Server running error",err);
   }
 };
 
 (async () => {
   await bootstrap();
+  // await seedSuperAdmin()
 })();
+
+
+
 
 process.on("unhandledRejection", () => {
   console.log("Unhandled Rejection Detected");
