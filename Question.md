@@ -1,3 +1,10 @@
+<!-- daraz add product ER diagram -->
+
+Link : https://drive.google.com/file/d/124Ds-zAef5QSzAEZmnNACk_V9EU6JGKm/view?usp=sharing
+
+
+
+
 1. What is the difference between:DELETE, TRUNCATE, DROP
    answer:The difference between:DELETE, TRUNCATE, DROP =
    DELETE: Erases specific lines (rows) using a pencil. You can undo it (Rollback), and you can choose to erase only certain lines using a WHERE clause.
