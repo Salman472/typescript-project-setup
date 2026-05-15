@@ -12,4 +12,9 @@ VALUES
 -- select all data
 SELECT * FROM employees
 
+--  Select Specific Columns
+
+SELECT name, salary
+FROM employees
+
 
