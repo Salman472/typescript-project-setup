@@ -21,3 +21,8 @@ FROM employees
 SELECT *
 FROM employees
 WHERE salary > 40000
+
+-- . Use ORDER BY
+SELECT * 
+FROM employees
+ORDER BY salary DESC
