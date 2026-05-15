@@ -17,4 +17,7 @@ SELECT * FROM employees
 SELECT name, salary
 FROM employees
 
-
+-- Use WHERE Condition
+SELECT *
+FROM employees
+WHERE salary > 40000
