@@ -8,3 +8,8 @@ VALUES
 (104, 'shofiq', 'shofiq@gmail.com', 45000, 'IT', '2026-05-18 08:08:40'),
 (105, 'user-5', 'user@gmail.com', 20000, 'Finance', '2026-05-20 08:00:00'),
 (106, 'user-6', 'user6@gmail.com', 15000, 'IT', '2026-05-15 08:00:00')
+
+-- select all data
+SELECT * FROM employees
+
+
