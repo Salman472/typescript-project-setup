@@ -1,3 +1,29 @@
+<!-- prisma related question -->
+
+1. What is Prisma ORM and why is it used in backend development?
+answer: Prisma ORM is a modern ORM (Object Relational Mapper) for Node.js and TypeScript applications.
+It helps developers communicate with databases using JavaScript/TypeScript instead of writing raw SQL queries manually.
+
+2. What is the difference between findUnique() and findFirst() in Prisma?
+answer:Both are used to find a single record, but they work differently.
+findUnique():Used when searching by a UNIQUE field.
+findFirst():Used when searching with normal conditions.
+
+3. What is Prisma Migration and why is prisma migrate dev used?
+answer: Migration means updating the database structure automatically from Prisma schema changes.
+
+4. Explain the difference between select and include in Prisma with examples.
+answer: Both are used to control returned data.But they work differently.
+select:Used to choose specific fields.
+include:Used to include related models (relations).
+
+5. What is the purpose of the Prisma schema file (schema.prisma) and what are its main sections?
+answer: The schema.prisma file is the main configuration file of Prisma.
+  1. Generator Section Defines Prisma Client generation.
+  2. Datasource Section Defines database connection.
+  3. Model Section Defines database tables.
+
+  
 <!-- daraz add product ER diagram -->
 
 Link : https://drive.google.com/file/d/124Ds-zAef5QSzAEZmnNACk_V9EU6JGKm/view?usp=sharing
