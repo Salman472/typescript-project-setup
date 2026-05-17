@@ -25,14 +25,14 @@ answer: The schema.prisma file is the main configuration file of Prisma.
 
 
 
-<!-- register image-->
+register image
 https://ibb.co.com/YxMsVtz
 
-<!-- verify otp image -->
+verify otp image
 https://ibb.co.com/Q3xXFwFt
 
-<!-- login image -->
-!https://example.com/logo.png
+login image
+https://example.com/logo.png
 
 
 <!-- daraz add product ER diagram -->
