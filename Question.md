@@ -23,8 +23,23 @@ answer: The schema.prisma file is the main configuration file of Prisma.
   2. Datasource Section Defines database connection.
   3. Model Section Defines database tables.
 
-  
+
+
+<!-- register image-->
+![Logo](https://ibb.co.com/YxMsVtz)
+
+<!-- verify otp image -->
+![Logo](https://ibb.co.com/Q3xXFwFt)
+
+<!-- login image -->
+![Logo](https://example.com/logo.png)
+
+
 <!-- daraz add product ER diagram -->
+
+https://ibb.co.com/Q3xXFwFt
+
+
 
 Link : https://drive.google.com/file/d/124Ds-zAef5QSzAEZmnNACk_V9EU6JGKm/view?usp=sharing
 

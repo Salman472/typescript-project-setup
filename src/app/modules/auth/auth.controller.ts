@@ -4,7 +4,6 @@ import sendResponse from "../../../utils/sendResponse.js";
 import { AuthService } from "./auth.service.js";
 import catchAsync from "../../../utils/catchAsync.js";
 
-
 // user register
 const registerUser = catchAsync(async (req: Request, res: Response) => {
   const result = await AuthService.registerUser(req.body);
@@ -18,7 +17,6 @@ const registerUser = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
-
 // user login
 const loginUser = catchAsync(async (req: Request, res: Response) => {
   const result = await AuthService.loginUser(req.body);
@@ -30,12 +28,16 @@ const loginUser = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
-
 // user veryfy
-const OtpVerify=catchAsync(async(req:Request, res:Response)=>{
-  const result=await AuthService.OtpVerify(req.body)
-   res.send(result.data)
-})
+const OtpVerify = catchAsync(async (req: Request, res: Response) => {
+  const result = await AuthService.OtpVerify(req.body);
+  res.send({
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "Verify Successful",
+    result,
+  });
+});
 
 export const AuthController = {
   loginUser,
