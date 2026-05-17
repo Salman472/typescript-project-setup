@@ -4,9 +4,24 @@ import sendResponse from "../../../utils/sendResponse.js";
 import { AuthService } from "./auth.service.js";
 import catchAsync from "../../../utils/catchAsync.js";
 
+
+// user register
+const registerUser = catchAsync(async (req: Request, res: Response) => {
+  const result = await AuthService.registerUser(req.body);
+
+  // res.status(201).json(result);
+  sendResponse(res, {
+    statusCode: httpStatus.CREATED,
+    success: true,
+    message: "register successful",
+    data: result,
+  });
+});
+
+
+// user login
 const loginUser = catchAsync(async (req: Request, res: Response) => {
   const result = await AuthService.loginUser(req.body);
-console.log(result, 'hello error');
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
@@ -15,19 +30,15 @@ console.log(result, 'hello error');
   });
 });
 
-const registerUser = catchAsync(async (req: Request, res: Response) => {
-  const result = await AuthService.registerUser(req.body);
-  
-  // res.status(201).json(result);
-  sendResponse(res, {
-    statusCode: httpStatus.OK,
-    success: true,
-    message: "register successful",
-    data: result,
-  });
-});
+
+// user veryfy
+const OtpVerify=catchAsync(async(req:Request, res:Response)=>{
+  const result=await AuthService.OtpVerify(req.body)
+   res.send(result.data)
+})
 
 export const AuthController = {
   loginUser,
-  registerUser
+  registerUser,
+  OtpVerify,
 };
